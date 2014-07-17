@@ -20,7 +20,7 @@ $.getJSON("https://api.github.com/gists/"+window.location.hash.substring(1), fun
                 console.log("using file " + file);
                 logcat = parser.parse(files[file]["content"]);
                 console.log(logcat);
-                var fragment = "<div>\n";
+                var fragment = "";
                 var i, len;
                 for (i = 0, len = logcat.messages.length; i < len; i++) {
                     var line = logcat.messages[i];
@@ -36,7 +36,6 @@ $.getJSON("https://api.github.com/gists/"+window.location.hash.substring(1), fun
                         fragment += "  </div>\n";
                     }
                 }
-                fragment += "</div>\n";
                 $("#gist-content").html(fragment);
                 return;
             }

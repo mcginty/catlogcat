@@ -1,0 +1,32 @@
+{
+  "name": "catlogcat",
+  "version": "0.0.0",
+  "description": "catlogcat =========",
+  "main": "script.js",
+  "dependencies": {
+    "browserify": "^4.2.1",
+    "logcat-parse": "^0.1.2"
+  },
+  "devDependencies": {
+    "browserify": "^4.2.1",
+    "gulp": "^3.8.6",
+    "gulp-browserify": "^0.5.0",
+    "gulp-gh-pages": "^0.3.3",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.3.1",
+    "yargs": "^1.2.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcginty/catlogcat.git"
+  },
+  "author": "Jake McGinty",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/mcginty/catlogcat/issues"
+  },
+  "homepage": "https://github.com/mcginty/catlogcat"
+}
