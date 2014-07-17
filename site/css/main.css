@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+}
+
+.log {
+    font-family: monospace;
+    margin: 5px 0;
+}
+
+.log .left-block {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    vertical-align: top;
+}
+.log .right-block {
+    display: inline-block;
+    width: 70%;
+    padding-left: 10px;
+}
+
+.log .pid {
+    color: #aaa;
+}
+
+.log .tag {
+    color: #aaa;
+}
+
+.log .msg {
+    whitespace: pre-wrap;
+}
+
+.log .level {
+  display: inline-block;
+  width: 2rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 5px; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
+  background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
+  background-color: transparent;
+  color: white;
+}
+
+.log .level.level-V {
+  background-color: #9b59b6;  /* Chrome, Firefox 3+, IE 9+, Opera 10.10+, Safari 3+ */
+}
+.log .level.level-D {
+  background-color: #3498db;  /* Chrome, Firefox 3+, IE 9+, Opera 10.10+, Safari 3+ */
+}
+.log .level.level-I {
+  background-color: #2ecc71;  /* Chrome, Firefox 3+, IE 9+, Opera 10.10+, Safari 3+ */
+}
+.log .level.level-W {
+  background-color: #f1c40f;  /* Chrome, Firefox 3+, IE 9+, Opera 10.10+, Safari 3+ */
+}
+.log .level.level-E {
+  background-color: #e74c3c;  /* Chrome, Firefox 3+, IE 9+, Opera 10.10+, Safari 3+ */
+}
