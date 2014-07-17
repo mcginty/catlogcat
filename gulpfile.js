@@ -19,14 +19,13 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest("./site/js/"));
 });
 
-gulp.task('deploy', function() {
-    gulp.src("./site/**/*")
-        .pipe(deploy());
-});
-
 gulp.task('watch', function() {
     gulp.watch(paths.scripts, ['scripts']);
 });
 
 gulp.task('default', ['scripts']);
 
+gulp.task('deploy', ['default'], function() {
+    gulp.src("./site/**/*")
+        .pipe(deploy());
+});
